@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(6, 150px);
+            /*
+            grid-template-rows: 100px auto 50px;
+            height: 100vh;
+            gap: 16px;
+
+            justify-content: space-around; */
+        }
+
+        nav {
+            background-color: rgb(8, 8, 8);
+            grid-column-start: 2;
+            grid-column-end: 7;
+            /*
+            grid-row-start: 1;
+            */
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1em;
+        }
+
+        main {
+            background-color: rgb(3, 3, 3);
+
+            grid-column-start: 2;
+            grid-column-end: 5;
+            /*
+            grid-row-start: 2;
+            */
+        }
+
+        aside {
+            background-color: rgb(209, 7, 7);
+            order: -2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 5
+
+            /*grid-row-start: 2;
+            */
+        }
+
+        nav ul li {
+            display: block;
+        }
+
+        @media (max-width: 500px) {
+            nav ul {
+                flex-direction: column;   
+                justify-content: end;                      
+            }
+            body {
+                background-color: black;
+                grid-template-rows: 100px auto 40px;
+            }
+            main {
+                display:block
+            }
+            aside {
+                grid-column-start: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Medien</a></li>
+            <li><a href="#">Informationen</a></li>
+            <li><a href="#">Über Uns</a></li>
+            <li><a href="#">Kostenfrei</a></li>
+        </ul>
+    </nav>
+    
+    <main>Inhalt
+        <img src="Bildschirmfoto%20vom%202025-02-05%2009-20-59.png" style="width: 100px;" >
+        <ul>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+            <li><a href="#">Text</a></li>
+        </ul>
+    </main>
+    <aside>Seitenleiste</aside>
+    <footer>Fußzeile</footer>
+</body>
+
+</html>
