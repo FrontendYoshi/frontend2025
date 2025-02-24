@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Basic</title>
+</head>
+
+<body>
+    Arrays sind Datenstrukturen die mehrere Daten speichern können.
+    Dabei kann es sich um homogene so wie heterogene Daten handeln.
+    In Arrays können wir Zahlen, Strings, weitere Arrays, Funktionen und Booleans speichern.
+
+    <script>
+        //let zahlen = [1, 2, 3, 4, 5];
+        //console.log(zahlen);
+
+
+        //  let mArray = [];
+
+        //erstell einen Array mit 3 Tiernamen, gib den gesamten array in der Konsole aus. gib den Namen deines Lieblingstieres in der Konsole aus
+        //let animals = ["Hund", "Katze", "Kanninchen"];
+        //console.log(animals);
+        //console.log(animals[0]);
+        // let cities = ["Berlin", "Hamburg", "Braunschweig", "Karlsruhe"];
+        // console.log(cities);
+        //console.log(cities[2]);
+
+        // ersetz Braunschweig durch Hannover
+        //  cities[2] = "Hannover";
+
+        // cities.push("Hannover"); 
+        // console.log(cities); // push fügt ein Element dem Array am Ende hinzu
+
+        // cities.unshift("Aachen");
+        // console.log(cities); // unshift fügt ein Element dem Array am Anfang hinzu
+
+        // cities.shift();
+        // console.log(cities); // shift entfernt das erste Element aus dem Array
+
+        // cities.pop();
+        // console.log(cities);//pop entfernt das letzte Element aus dem Array
+        //let zweiDimmensional = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+        //console.log(zweiDimmensional[1][1]);
+        let leute = [["Noah", 34, "Berlin"], ["Svenja", 27, "Limburg"], ["Mara", 30, "Köln"]];
+        console.log(leute);
+        for (let i = 0; i < leute.length; i++) {
+            console.log(leute[i]);
+            for (let j = 0; j < leute[i].length; j++) {
+                console.log(leute[i][j]);
+            }
+        }
+        // ein kasten der bsp 4 kästen beinhaltet mit jeweils 6 Bierflaschen
+        let bierkasten = [[1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6], [1, 2, 3, 4, 5, 6]];
+
+        // nehme einzelne 6packs aus den 4 Kästen
+        for (let i = 0; i < bierkasten.length; i++) {
+            console.log(bierkasten[i]);
+
+            // nehme jedem einzelnen 6pack u packe meine einzelnen flaschen daraus
+            for (let j = 0; j < bierkasten[i].length; j++) {
+                console.log(bierkasten[i][j]);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

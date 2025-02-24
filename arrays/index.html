@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Erstell einen Array mit zwei Städten. Gib den Array in der Konsole aus. Füge eine neue Stadt am Ende hinzu. Füge
+        eine weitere Stadt am Anfang hinzu. Gib den mutierten Array in der Konsole aus. Entferne bitte wieder die beiden
+        Städte und gib wiederum den Array aus.</p>
+  <script>
+    let cities = ["Berlin", "Köln"];
+    console.log (cities);
+
+    cities.push("Hamburg"); 
+    console.log(cities);
+
+    cities.unshift("Dresden");
+    console.log(cities);
+
+    cities.shift();
+    console.log(cities);
+    
+    cities.pop();
+    console.log(cities);
+
+  </script>      
+</body>
+
+</html>
