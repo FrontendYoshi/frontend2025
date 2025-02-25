@@ -1,1 +1,1 @@
-# frontend2025
+A compilation of the skills I learned during my training as a frontend developer.
