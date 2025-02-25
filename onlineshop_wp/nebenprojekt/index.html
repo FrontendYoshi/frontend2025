@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlineShop</title>
+    <style>
+        .navigate {
+            background-color: darkred;
+            position: relative;
+        }
+
+        .navigate ul {
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            background-color: darkred;
+        }
+
+        .navigate li {
+            display: inline-block;
+        }
+
+        .navigate li a {
+            color: white;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        .navigate ul ul {
+            position: absolute;
+            top: 100%;
+            display: none;
+        }
+
+        .navigate ul ul li {
+            display: block;
+        }
+
+        .navigate li:hover ul {
+            display: block;
+        }
+
+        /* verändert die Hintergrundfarbe vom Dropdown */
+        .navigate ul ul li {
+            background-color: darkgray;
+        }
+
+        .navigate ul ul ul ul li:hover {
+            display: block;
+        }
+
+        h1 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 50px;
+            text-align: center;
+            text-decoration-line: overline underline;
+            text-decoration-color: darkred;
+        }
+        h3 {
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 10px;
+            text-align: end;
+            text-decoration-line: underline;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            width: 10%;
+        }
+
+        footer {
+            color: white;
+        }     
+        .warenkorb {
+            justify-content: flex-end;
+            color: white;
+        }       
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/home/fullstack/Frontend_2025/OnlineShop_Wochenprojekt/doglovers.jpeg" height="100" width="100">
+        <h1 id="headline">tender love</h1>
+    </header>
+    <main>
+        <nav class="navigate">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Merchandise</a>
+                    <ul>
+                        <li><a href="#">Hoodies</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Accessoirs</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Infomaterial</a>
+                    <ul>
+                        <li><a href="#">Aufkleber</a></li>
+                        <li><a href="#">Poster</a></li>
+                        <li><a href="#">Flyer</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Newsletter</a>
+                    <ul>
+                        <li><a href="name"></a>
+                            <form action="https://www.google.com/" method="post">
+                                <label for="name">Vor- und Nachname</label>
+                                <input id="name" name="name" maxlength="100">
+                                <label for="email">E-Mail</label>
+                                <input id="email" name="email" maxlength="100">
+
+                                <button type="submit" name="action" value="läuft">abbonieren</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <h3 id="Korb">Ihr Warenkorb</h1>
+
+<table class="warenkorb">
+    <thead>
+        <tr>
+            <th>Produkt</th>
+            <th>Preis</th>
+            <th>Menge</th>
+            <th>Gesamt</th>
+        </tr>
+    </thead>
+    <tbody id="warenkorb">
+        <tr>
+            <td>Produkt 1</td>
+            <td>10,00 €</td>
+            <td><input type="number" value="1"></td>
+            <td class="gesamt">10,00 €</td>
+        </tr>
+        <tr>
+            <td>Produkt 2</td>
+            <td>15,00 €</td>
+            <td><input type="number" value="1"></td>
+            <td class="gesamt">15,00 €</td>
+        </tr>
+    </tbody>
+    <h2>Gesamtsumme: <span id="gesamtSumme">25,00 €</span></h2>
+</table>
+
+
+    </main>
+
+    <footer>&copy Noah Neweling n.neweling@gmail.com</footer>
+    <script>
+
+    </script>
+</body>
+
+</html>
